@@ -45,7 +45,7 @@ except:
 streamlit.header("The fruit load list contains:")
 def get_fruit_load_list():
     with my_cnx.cursor() as my_cur:
-        mycur.execute("select * from fruit_load_list")
+        mycur.execute("select * from pc_rivery_db.public.fruit_load_list")
         return mycur.fetchall()
 # add button to load the fruit
 if streamlit.button("Get Fruit Load List"):
